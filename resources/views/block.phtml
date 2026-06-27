@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @var array<int,array{title:string,url:string,type:string}> $shortcuts
+ */
+
+use Fisharebest\Webtrees\I18N;
+
+?>
+
+<?php if ($shortcuts === []) : ?>
+    <p class="text-muted mb-0">
+        <?= I18N::translate("Choose the module settings links to show using this block's preferences.") ?>
+    </p>
+<?php else : ?>
+    <div class="potts-admin-shortcuts">
+        <?php foreach ($shortcuts as $shortcut) : ?>
+            <a class="potts-admin-shortcut" href="<?= e($shortcut['url']) ?>">
+                <span class="potts-admin-shortcut-icon" aria-hidden="true"><?= view('icons/preferences') ?></span>
+                <span><?= e($shortcut['title']) ?></span>
+                <span class="potts-admin-shortcut-arrow" aria-hidden="true">&rsaquo;</span>
+            </a>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>

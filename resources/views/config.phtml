@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @var array<string,array{title:string,url:string,type:string}> $available
+ * @var array<int,string> $selected
+ */
+
+use Fisharebest\Webtrees\I18N;
+
+?>
+
+<p class="text-muted">
+    <?= I18N::translate('Select the administration pages you use most often.') ?>
+</p>
+
+<div class="potts-admin-shortcuts-config">
+    <?php foreach ($available as $shortcut_id => $shortcut) : ?>
+        <div class="form-check">
+            <input
+                class="form-check-input"
+                id="potts-admin-shortcut-<?= e(md5($shortcut_id)) ?>"
+                name="shortcuts[]"
+                type="checkbox"
+                value="<?= e($shortcut_id) ?>"
+                <?= in_array($shortcut_id, $selected, true) ? 'checked' : '' ?>
+            >
+            <label class="form-check-label" for="potts-admin-shortcut-<?= e(md5($shortcut_id)) ?>">
+                <?= e($shortcut['title']) ?>
+                <?php if ($shortcut['type'] === 'custom') : ?>
+                    <span class="badge bg-secondary"><?= I18N::translate('Custom module') ?></span>
+                <?php endif ?>
+            </label>
+        </div>
+    <?php endforeach ?>
+</div>
