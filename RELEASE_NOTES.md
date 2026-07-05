@@ -1,27 +1,18 @@
-# Potts Administration Shortcuts 1.0.0-beta.1
+# Potts Administration Shortcuts v1.0.0
 
-Initial public beta for webtrees 2.2.x.
+Stable release of Potts Administration Shortcuts v1.0.0.
 
-## Highlights
+This release promotes the tested 1.0.0-beta.1 build to a regular stable release.
 
-- Adds an administrator-only My Page block for quick access to common administration pages.
-- Lets each administrator choose which module settings links appear in the block.
-- Includes an optional shortcut to webtrees User administration.
-- Uses responsive card styling that works across webtrees themes.
-- Keeps the block hidden from non-administrators.
+Changes in this release:
 
-## Installation
+- Changed the internal version from 1.0.0-beta.1 to 1.0.0.
+- Added Custom Module Manager update-service support.
+- Added latest-version.txt.
+- Added GitHub support URL metadata.
+- Kept the administrator-only My Page block.
+- Kept per-block selection of enabled module settings pages.
+- Kept the optional User administration shortcut.
+- Kept responsive styling compatible with webtrees themes.
 
-Download the release asset named:
-
-`potts_admin_shortcuts-1.0.0-beta.1.zip`
-
-Extract it and upload the `potts_admin_shortcuts` folder to:
-
-`modules_v4/potts_admin_shortcuts`
-
-Then enable **Administration shortcuts** from **Control panel > Modules > All modules**.
-
-## Testing Notes
-
-This is a beta release. Please test it on a non-production webtrees installation first, especially if your site uses several custom modules or themes.
+This release is intended as the first regular stable release of Potts Administration Shortcuts for webtrees 2.2.x.

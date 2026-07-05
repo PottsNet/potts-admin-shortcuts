@@ -57,7 +57,18 @@ final class PottsAdminShortcutsModule extends AbstractModule implements ModuleBl
 
     public function customModuleVersion(): string
     {
-        return '1.0.0-beta.1';
+        return '1.0.0';
+    }
+
+
+    public function customModuleLatestVersion(): string
+    {
+        return '1.0.0';
+    }
+
+    public function customModuleLatestVersionUrl(): string
+    {
+        return 'https://raw.githubusercontent.com/PottsNet/potts-admin-shortcuts/main/latest-version.txt';
     }
 
     public function customModuleAuthorName(): string

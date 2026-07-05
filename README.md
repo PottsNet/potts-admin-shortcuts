@@ -1,15 +1,16 @@
-# Potts Administration Shortcuts
+# Potts Administration Shortcuts for webtrees
 
-A configurable administrator-only My Page block for webtrees 2.2.x.
+Potts Administration Shortcuts provides a configurable administrator-only **My Page** block for webtrees 2.2.x. It gives administrators quick access to commonly used module settings and user administration pages.
 
 ## Features
 
-- Lists enabled modules that provide a webtrees settings page
-- Lets each administrator choose their most-used module settings
-- Includes User administration as an optional shortcut
-- Stores choices in the individual My Page block configuration
-- Hides the block content from non-administrators
-- Works with any webtrees theme
+- Lists enabled modules that provide a webtrees settings page.
+- Lets each administrator choose their most-used module settings links.
+- Includes **User administration** as an optional shortcut.
+- Stores choices in the individual My Page block configuration.
+- Hides the block content from non-administrators.
+- Works with any webtrees theme.
+- Includes Custom Module Manager update-service metadata.
 
 ## Requirements
 
@@ -19,11 +20,16 @@ A configurable administrator-only My Page block for webtrees 2.2.x.
 
 ## Installation
 
-1. Extract the release ZIP.
-2. Upload the `potts_admin_shortcuts` folder to `modules_v4/`.
-3. Open **Control panel > Modules > All modules** and enable **Administration shortcuts**.
-4. Open **My page**, choose **Change the blocks on this page** and add **Administration shortcuts**.
-5. Use the block preferences button to select the links to display.
+1. Download the release ZIP from GitHub.
+2. Extract the ZIP.
+3. Upload the `potts_admin_shortcuts` folder to `modules_v4/`.
+4. Open **Control panel > Modules > All modules** and enable **Administration shortcuts**.
+5. Open **My page**, choose **Change the blocks on this page** and add **Administration shortcuts**.
+6. Use the block preferences button to select the links to display.
+
+## Custom Module Manager
+
+This module includes update-service support for webtrees Custom Module Manager through `latest-version.txt`.
 
 ## Notes
 
