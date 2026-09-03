@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace PottsAdminShortcuts;
 
+use Fisharebest\Localization\Translation;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Http\RequestHandlers\UserListPage;
 use Fisharebest\Webtrees\I18N;
@@ -27,6 +28,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use function array_intersect;
 use function array_keys;
 use function array_values;
+use function file_exists;
 use function is_array;
 use function is_string;
 use function json_decode;
@@ -79,6 +81,14 @@ final class PottsAdminShortcutsModule extends AbstractModule implements ModuleBl
     public function customModuleSupportUrl(): string
     {
         return 'https://github.com/PottsNet/potts-admin-shortcuts/issues';
+    }
+
+    /** @return array<string,string> */
+    public function customTranslations(string $language): array
+    {
+        $file = $this->resourcesFolder() . 'lang/' . $language . '.mo';
+
+        return file_exists($file) ? (new Translation($file))->asArray() : [];
     }
 
     public function resourcesFolder(): string

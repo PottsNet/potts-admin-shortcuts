@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Potts Administration Shortcuts\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Administration shortcuts"
+msgstr ""
+
+msgid "Quick links to an administrator's favourite module settings and user administration."
+msgstr ""
+
+msgid "This block is available to administrators only."
+msgstr ""
+
+msgid "User administration"
+msgstr ""
+
+msgid "Choose the module settings links to show using this block's preferences."
+msgstr ""
+
+msgid "Select the administration pages you use most often."
+msgstr ""
+
+msgid "Custom module"
+msgstr ""
